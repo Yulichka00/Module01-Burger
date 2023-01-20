@@ -370,3 +370,110 @@ header {
 .menu-extra {
     padding: 2px;
 }
+
+.footer {
+    background: #1E2F40;
+    color: #fff;
+    padding-top: 117px;
+    padding-bottom: 106px;
+    margin-top: 139px;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 63px;
+    height: 56px;
+    margin-right: -9px;
+}
+
+.footer-item h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 1px;
+    padding-right: 8px;
+    padding-left: 3px;
+    margin-right: 7px;
+}
+
+.footer-item2 h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 1px;
+    padding-right: 2px;
+    padding-left: 6px;
+}
+
+.footer-list {
+    padding-left: 4px;
+    list-style-type: none;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-top: 4px;
+    margin-right: -2px;
+    position: relative;
+}
+
+.footer-list2 {
+    padding-left: 8px;
+    list-style-type: none;
+    font-family: 'Nunito Sans', sans-serif;
+    position: absolute;
+    margin-top: 4px;
+}
+
+.footer-list3 {
+    padding-left: 4px;
+    list-style-type: none;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-top: 4px;
+    margin-right: -2px;
+    position: relative;
+}
+
+.footer-item li {
+    margin-bottom: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #FAF9F9;
+    font-weight: 700;
+    line-height: 21.5px;
+}
+
+.footer-item2 li {
+    margin-bottom: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #FAF9F9;
+    font-weight: 700;
+    line-height: 23.5px;
+}
+
+.footer-item a, .footer-item2 a {
+    color: #DEDEDE;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.footer-item span, .footer-item2 span {
+    color: #DEDEDE;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.footer-tel ul {
+    font-size: 20px;
+    font-weight: 900;
+    color: #FBB731;
+    padding-right: 5px;
+    margin-top: 0px;
+}
+
+.footer-tel li {
+    margin-bottom: 12px; 
+}
