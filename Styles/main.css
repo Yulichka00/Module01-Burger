@@ -22,6 +22,13 @@ header {
     padding-bottom: 25px;
 }
 
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 68%;
+}
+
 .header-nav {
     list-style-type: none;
     display: flex;
@@ -184,7 +191,7 @@ header {
     position: absolute;
     width: 344px;
     height: 238px;
-    margin: 99px 99px;
+    margin: 99px 100px;
 }
 
 .banner-title {
@@ -196,7 +203,7 @@ header {
 
     line-height: 69px;
     text-transform: uppercase;
-    margin-top: -35.5px;
+    margin-top: -34.5px;
 
     margin-bottom: 10px;
 }
@@ -240,8 +247,14 @@ header {
     color: #1E2F40;
     background-color: #FBB731;
     border-radius: 5px;
-    padding: 19.5px 25px;
+    padding: 18.5px 24px;
     text-decoration: none;
+    border: 1px solid #FBB731;
+}
+
+.banner-link:hover {
+    background-color: transparent;
+    color: #FBB731;
 }
 
 .menu-header {
@@ -268,7 +281,7 @@ header {
     color: #443737;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
-   
+
     font-size: 15px;
     line-height: 24px;
     appearance: none;
@@ -346,6 +359,11 @@ header {
     gap: 11px;
 }
 
+.menu-grid-button:hover {
+    background:  #F37335;
+    cursor: pointer;
+}
+
 .menu-grid-icon {
     /*position: absolute;*/
     width: 18px;
@@ -379,101 +397,100 @@ header {
     margin-top: 139px;
 }
 
+.footer-box-items {
+    display: flex;
+}
+
 .footer-box {
     display: flex;
+    /*flex-wrap: nowrap;*/
+    align-items: left;
     justify-content: space-between;
+    flex-basis: 98%;
+    border: 1px strong white;
+    height: 100%;
+    width: 100vh
+
 }
 
 .footer-logo {
     width: 63px;
     height: 56px;
-    margin-right: -9px;
+    /*margin-right: -9px;*/
 }
 
 .footer-item h2 {
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
-    margin-top: 1px;
-    padding-right: 8px;
-    padding-left: 3px;
-    margin-right: 7px;
-}
-
-.footer-item2 h2 {
-    font-size: 20px;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-top: 1px;
-    padding-right: 2px;
-    padding-left: 6px;
+    margin: 3px 3px;
+    /*padding: 3px 23px;
+     font-family: 'Nunito Sans', sans-serif; */
+    letter-spacing: 0.25px;
 }
 
 .footer-list {
+    padding-left: 5px;
+    list-style-type: none;
+    padding-top: 4.25px;
     padding-left: 4px;
-    list-style-type: none;
-    font-family: 'Nunito Sans', sans-serif;
-    padding-top: 4px;
-    margin-right: -2px;
-    position: relative;
 }
 
-.footer-list2 {
-    padding-left: 8px;
-    list-style-type: none;
-    font-family: 'Nunito Sans', sans-serif;
-    position: absolute;
-    margin-top: 4px;
-}
-
-.footer-list3 {
-    padding-left: 4px;
-    list-style-type: none;
-    font-family: 'Nunito Sans', sans-serif;
-    padding-top: 4px;
-    margin-right: -2px;
-    position: relative;
-}
-
-.footer-item li {
+.footer-list li {
     margin-bottom: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15.25px;
+    color: #FAF9F9;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+/*.footer-list2 li {
+    margin-bottom: 13px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     color: #FAF9F9;
-    font-weight: 700;
-    line-height: 21.5px;
-}
-
-.footer-item2 li {
-    margin-bottom: 12px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    color: #FAF9F9;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 23.5px;
-}
 
-.footer-item a, .footer-item2 a {
+
+.footer-list a, 
+.footer-list2 a { }*/
+.footer-list a {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
 }
 
-.footer-item span, .footer-item2 span {
+.footer-list a:hover {
+    color: #FFC725;
+}
+
+.footer-item span {
     color: #DEDEDE;
     display: block;
     font-weight: 400;
-    margin-bottom: 2px;
+    margin-bottom: 6px;
 }
 
-.footer-tel ul {
-    font-size: 20px;
-    font-weight: 900;
-    color: #FBB731;
-    padding-right: 5px;
+.footer-list-tel {
     margin-top: 0px;
 }
 
-.footer-tel li {
-    margin-bottom: 12px; 
+.footer-list-tel li {
+    margin-bottom: 14px;
+}
+
+.footer-list-tel a {
+    font-size: 20px;
+    font-weight: 800;
+    color: #FBB731;
+    padding-right: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.footer-list-tel a:hover {
+    color: #fff;
 }
