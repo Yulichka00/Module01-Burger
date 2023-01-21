@@ -1,277 +1,112 @@
 <!DOCTYPE html>
 <html lang="ru">
+<!--Because I'm using Russian Language-->
+<!--<html lang="ru"></html>-->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burger</title>
+    <title>Burgers</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700;800&family=Open+Sans:wght@400;700;800&display=swap">
+    <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="Styles/normalize.css">
     <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/normalize.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="header">
-                <div class="header-item">
-                    <a href="#" class="header-logo"></a>
-                    <nav>
-                        <ul class="header-nav">
-                            <li><a href="#" class="active">Главная</a></li>
-                            <li><a href="#">Меню</a></li>
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <button type="button" class="button">
-                    <span class="item-button">
-                        <img src="Images/cart.png" alt="Shopping cart">
-                        <span class="count-button">5</span>
-                    </span>
-                    <span class="text-button">$125</span>
-                </button>
+    <div class="main">
+        <div class="wrapper-container">
+            <div class="content">
+                <h1 class="content-title">
+                    <span>работаем c 11:00 до 22:00</span>
+                    Лучшие бургеры
+                </h1>
+                <p class="content-text">
+                    Закажи наши фирменные бургеры или собери что-то своё, a&nbsp;наши курьеры доставят
+                    за&nbsp;30&nbsp;минут
+                </p>
+                <a class="content-link" href="menu.html">заказать</a>
             </div>
-        </div>
-    </header>
-    <div class="bg">
-        <div class="container">
-            <ul class="breadcrumbs">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Меню</a></li>
-            </ul>
-            <h1 class="title">Наше Меню</h1>
-            <p class="description">Выбирай из предложенного ассортимента и мы доставим блюдо в течении часа</p>
+            <div class="visual">
+                <div class="visual-background"></div>
+                <img src="Images/burger.png" alt="Burger">
+            </div>
         </div>
     </div>
-    <main>
-        <div class="banner">
-            <div class="banner-container">
-                <div class="banner-box">
-                    <h2 class="banner-title">
-                        <span>скидка</span>
-                        <br>
-                        -30%
-                    </h2>
-                    <p class="banner-text"> Только при покупке 3-х и более позиций,
-                        <br> мы дарим скидку. Акции не суммируются.
-                    </p>
-                    <a href="#" class="banner-link">купить сейчас</a>
-                </div>
+    <div class="promo">
+        <div class="wrapper-container-promo">
+            <div class="promo-left">
+                <p class="sales">Скидка</p>
+                <p class="cost">-20%</p>
+                <p class="promo-description">При заказе на 3х и более персон мы делаем скидки, а также предоставляем скидки
+                    именинникам</p>
+            </div>
+            <div class="promo-right">
+                <p class="free">Бесплатно</p>
+                <p class="promo-description">При заказе на сумму 500 рублей и более <br> - доставляем бесплатно</p>
+                <a href="menu.html">заказать</a>
             </div>
         </div>
-        <section class="menu">
-            <div class="container">
-                <div class="menu-header">
-                    <h2 class="menu-title">Бургеры</h2>
-                    <select class="select-menu">
-                        <option value="">Сортировать</option>
-                        <option value="up">По возрастанию</option>
-                        <option value="up">По убыванию</option>
-                    </select>
-                </div>
-                <div class="menu-grid">
-                    <div class="menu-grid-item">
-                        <div class="menu-grid-cover">
-                            <img src="Images/Menu/01.jpg" alt="Острый бургер">
-                        </div>
-                        <div class="item-description">
-                            <p class="menu-grid-title">Острый бургер</p>
-                            <p class="menu-grid-price">$26</p>
-                            <button class="menu-grid-button">
-                                <span class="menu-grid-icon">
-                                    <img src="Images/shopping-cart.svg" alt="Shopping cart">
-                                </span>
-                                <span class="menu-grid-text">купить</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="menu-grid-item">
-                        <div class="menu-grid-cover">
-                            <img src="Images/Menu/02.jpg" alt="Гриль Бургер">
-                        </div>
-                        <div class="item-description">
-                            <p class="menu-grid-title">Гриль Бургер </p>
-                            <p class="menu-grid-price">$16</p>
-                            <button class="menu-grid-button">
-                                <span class="menu-grid-icon">
-                                    <img src="Images/shopping-cart.svg" alt="Shopping cart">
-                                </span>
-                                <span class="menu-grid-text">купить</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="menu-grid-item">
-                        <div class="menu-grid-cover">
-                            <img src="Images/Menu/03.jpg" alt="Бургер Гигант">
-                        </div>
-                        <div class="item-description">
-                            <p class="menu-grid-title">Бургер Гигант</p>
-                            <p class="menu-grid-price">$37</p>
-                            <button class="menu-grid-button">
-                                <span class="menu-grid-icon">
-                                    <img src="Images/shopping-cart.svg" alt="Shopping cart">
-                                </span>
-                                <span class="menu-grid-text">купить</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="menu-grid-item">
-                        <div class="menu-grid-cover">
-                            <img src="Images/Menu/04.jpg" alt="Бургер с курицей">
-                        </div>
-                        <div class="item-description">
-                            <p class="menu-grid-title">Бургер с курицей</p>
-                            <p class="menu-grid-price">$18</p>
-                            <button class="menu-grid-button">
-                                <span class="menu-grid-icon">
-                                    <img src="Images/shopping-cart.svg" alt="Shopping cart">
-                                </span>
-                                <span class="menu-grid-text">купить</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="menu-grid-item">
-                        <div class="menu-grid-cover">
-                            <img src="Images/Menu/05.jpg" alt="Бургер с курицей">
-                        </div>
-                        <div class="item-description">
-                            <p class="menu-grid-title">Бургер с курицей</p>
-                            <p class="menu-grid-price">$9</p>
-                            <button class="menu-grid-button">
-                                <span class="menu-grid-icon">
-                                    <img src="Images/shopping-cart.svg" alt="Shopping cart">
-                                </span>
-                                <span class="menu-grid-text">купить</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="menu-grid-item">
-                        <div class="menu-grid-cover">
-                            <img src="Images/Menu/06.jpg" alt="Тройной бургер">
-                        </div>
-                        <div class="item-description">
-                            <p class="menu-grid-title">Тройной бургер</p>
-                            <p class="menu-grid-price">$7</p>
-                            <button class="menu-grid-button">
-                                <span class="menu-grid-icon">
-                                    <img src="Images/shopping-cart.svg" alt="Shopping cart">
-                                </span>
-                                <span class="menu-grid-text">купить</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-header">
-                    <h2 class="menu-title">Дополнительно</h2>
-                </div>
-                <div class="menu-grid">
-                    <div class="menu-grid-item">
-                        <div class="menu-grid-cover">
-                            <img src="Images/Menu/07.jpg" alt="Сэндвич">
-                        </div>
-                        <div class="item-description">
-                            <p class="menu-grid-title">Сэндвич</p>
-                            <p class="menu-grid-price">$3</p>
-                            <button class="menu-grid-button">
-                                <span class="menu-grid-icon">
-                                    <img src="Images/shopping-cart.svg" alt="Shopping cart">
-                                </span>
-                                <span class="menu-grid-text">купить</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="menu-grid-item">
-                        <div class="menu-grid-cover">
-                            <img src="Images/Menu/08.jpg" alt="Картошка Фри">
-                        </div>
-                        <div class="item-description">
-                            <p class="menu-grid-title">Картошка Фри</p>
-                            <p class="menu-grid-price">$5</p>
-                            <button class="menu-grid-button">
-                                <span class="menu-grid-icon">
-                                    <img src="Images/shopping-cart.svg" alt="Shopping cart">
-                                </span>
-                                <span class="menu-grid-text">купить</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="menu-grid-item">
-                        <div class="menu-grid-cover">
-                            <img src="Images/Menu/09.jpg" alt="Хот-Дог">
-                        </div>
-                        <div class="item-description">
-                            <p class="menu-grid-title">Хот-Дог</p>
-                            <p class="menu-grid-price">$7</p>
-                            <button class="menu-grid-button">
-                                <span class="menu-grid-icon">
-                                    <img src="Images/shopping-cart.svg" alt="Shopping cart">
-                                </span>
-                                <span class="menu-grid-text">купить</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+    </div>
     <footer class="footer">
-        <div class="container">
+        <div class="footer-container">
             <div class="footer-box-items">
                 <div class="footer-box">
 
                     <img class="footer-logo" src="Images/Logo-footer.svg" alt="Logo">
-                
-                <div class="footer-item">
-                    <h2>основные ссылки</h2>
-                    <ul class="footer-list">
-                        <li><a href="">Меню</a></li>
-                        <li><a href="">Заказ и Доставка</a></li>
-                        <li><a href="">Методы оплаты</a></li>
-                        <li><a href="">Контакты</a></li>
-                    </ul>
-                </div>
-            
-                <!--<div class="footer-item2">-->
-                <div class="footer-item">
-                    <h2>основная информация</h2>
-                    <ul class="footer-list">
-                        <li>
-                            <span>
-                                Время
-                            </span>
-                            ПН - ВС<br>
-                            11:00 - 22:00 без перерывов
-                        </li>
-                        <li>
-                            <span>
-                                Адрес
-                            </span>
-                            Москва, ул. Тверская, 5
-                        </li>
-                    </ul>
-                </div>
+<div class="footer-links">
+                    <div class="footer-item">
+                        <h2>основные ссылки</h2>
+                        <ul class="footer-list">
+                            <li><a href="menu.html">Меню</a></li>
+                            <li><a href="#">Заказ и Доставка</a></li>
+                            <li><a href="#">Методы оплаты</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+</div>
+<div class="footer-info">
+                    <!--<div class="footer-item2">-->
+                    <div class="footer-item">
+                        <h2>основная информация</h2>
+                        <ul class="footer-list">
+                            <li>
+                                <span>
+                                    Время
+                                </span>
+                                ПН - ВС<br>
+                                11:00 - 22:00 без перерывов
+                            </li>
+                            <li>
+                                <span>
+                                    Адрес
+                                </span>
+                                Москва, ул. Тверская, 5
+                            </li>
+                        </ul>
+                    </div>
 
-
-                <div class="footer-tel">
-                    <ul class="footer-list footer-list-tel">
-                        <li>
-                            <a href="tel:+79007871313">+ 7 900 787 13-13</a>
-                        </li>
-                        <li>
-                            <a href="tel:+79007001414">+ 7 900 700 14-14</a>
-                        </li>
-                    </ul>
+                </div>
+                <div class="footer-tel-box">
+                    <div class="footer-tel">
+                        <ul class="footer-list footer-list-tel">
+                            <li>
+                                <a href="tel:+79007871313">+ 7 900 787 13-13</a>
+                            </li>
+                            <li>
+                                <a href="tel:+79007001414">+ 7 900 700 14-14</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-
     </footer>
 </body>
 
