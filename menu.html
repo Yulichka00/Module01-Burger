@@ -18,7 +18,7 @@
 <body>
     <header>
         <div class="container">
-            <div class="header">
+            <div class="header" id="headerTop">
                 <div class="header-item">
                     <a href="index.html" class="header-logo"></a>
                     <nav>
@@ -227,54 +227,100 @@
                 <div class="footer-box">
 
                     <img class="footer-logo" src="Images/Logo-footer.svg" alt="Logo">
-<div class="footer-links">
-                    <div class="footer-item">
-                        <h2>основные ссылки</h2>
-                        <ul class="footer-list">
-                            <li><a href="menu.html">Меню</a></li>
-                            <li><a href="#">Заказ и Доставка</a></li>
-                            <li><a href="#">Методы оплаты</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
+                    <div class="footer-links">
+                        <div class="footer-item">
+                            <h2>основные ссылки</h2>
+                            <ul class="footer-list">
+                                <li><a href="menu.html">Меню</a></li>
+                                <li><a href="#">Заказ и Доставка</a></li>
+                                <li><a href="#">Методы оплаты</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
                     </div>
-</div>
-<div class="footer-info">
-                    <!--<div class="footer-item2">-->
-                    <div class="footer-item">
-                        <h2>основная информация</h2>
-                        <ul class="footer-list">
-                            <li>
-                                <span>
-                                    Время
-                                </span>
-                                ПН - ВС<br>
-                                11:00 - 22:00 без перерывов
-                            </li>
-                            <li>
-                                <span>
-                                    Адрес
-                                </span>
-                                Москва, ул. Тверская, 5
-                            </li>
-                        </ul>
-                    </div>
+                    <div class="footer-info">
+                        <!--<div class="footer-item2">-->
+                        <div class="footer-item">
+                            <h2>основная информация</h2>
+                            <ul class="footer-list">
+                                <li>
+                                    <span>
+                                        Время
+                                    </span>
+                                    ПН - ВС<br>
+                                    11:00 - 22:00 без перерывов
+                                </li>
+                                <li>
+                                    <span>
+                                        Адрес
+                                    </span>
+                                    Москва, ул. Тверская, 5
+                                </li>
+                            </ul>
+                        </div>
 
-                </div>
-                <div class="footer-tel-box">
-                    <div class="footer-tel">
-                        <ul class="footer-list footer-list-tel">
-                            <li>
-                                <a href="tel:+79007871313">+ 7 900 787 13-13</a>
-                            </li>
-                            <li>
-                                <a href="tel:+79007001414">+ 7 900 700 14-14</a>
-                            </li>
-                        </ul>
+                    </div>
+                    <div class="footer-tel-box">
+                        <div class="footer-tel">
+                            <ul class="footer-list footer-list-tel">
+                                <li>
+                                    <a href="tel:+79007871313">+ 7 900 787 13-13</a>
+                                </li>
+                                <li>
+                                    <a href="tel:+79007001414">+ 7 900 700 14-14</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </footer>
+    <a href="#headerTop" class="button-up.hidden" id="btnUp">Наверх</a>
+    <script>
+        // Smooth Scroll
+        const links = document.querySelectorAll(".banner-link");
+
+        for (const link of links) {
+            link.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+        // Button Up
+        window.onscroll = function () { scrollFunction() };
+
+        const upbuttons = document.querySelectorAll(".button-up");
+
+        for (const upbutton of upbuttons) {
+            upbutton.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                document.getElementById('btnUp').className = 'button-up visible';
+            } else {
+                document.getElementById('btnUp').className = 'button-up hidden';
+            }
+        }
+
+
+    </script>
 </body>
 
 </html>
