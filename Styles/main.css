@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -168,7 +167,7 @@ header {
 
 .banner {
     background-image: url(../Images/banner.jpg);
-    background-position: center center;
+    background-position: 0 center;
     max-width: 1180px;
     height: 438px;
     left: 370px;
@@ -298,11 +297,11 @@ header {
     margin-right: -2px;
 }
 
-.menu-grid {
+.menu-grid, .menu-grid-options {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px 20px;
-}
+} 
 
 .menu-grid-cover {
     width: 100%;
@@ -318,6 +317,7 @@ header {
     transform: translate(-50%, -50%);
     object-fit: cover;
     width: 100%;
+    min-width: 380px;
     height: 430px;
 }
 
@@ -438,12 +438,14 @@ header {
     height: 183px;
     margin-left: 17px;
 }
+
 .footer-tel-box {
     /*border: 1px solid red;*/
     width: 215px;
     height: 173px;
     margin-right: -1000px;
 }
+
 .footer-item {
     margin-left: 29px;
     width: 303px;
@@ -475,7 +477,7 @@ header {
     line-height: 21px;
 }
 
-.footer-list a{
+.footer-list a {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
@@ -553,7 +555,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding-right: 79px;
-    
+
 }
 
 .wrapper-container-promo {
@@ -708,4 +710,74 @@ header {
     font-weight: 700;
     margin-bottom: -1px;
     margin-top: 1px;
+}
+
+/*Responsive*/
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 738px;
+    }
+
+    .header-logo {
+        width: 150px;
+        height: 47.81px;
+        background-size: contain;
+    }
+
+    .header-nav {
+        gap: 22px;
+    }
+
+    .header-item {
+        flex-basis: 75.5%;
+    }
+
+    .bg {
+        margin-bottom: 72px;
+    }
+
+    .banner {
+        background-position: -79px center;
+        padding: 100px 40px 120px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 15px;
+    }
+
+    .menu-grid-options {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px 8px;
+        min-width: 380px;
+        
+    }
+
+    .menu-other-options { /*My img with other food option*/
+        max-width: 100%;
+    }
+
+    .menu-grid-cover img {
+        max-width: 380px;
+
+    }
+    .menu-grid-cover .menu-other-options{
+        height: 320px;
+        background-position: 0 center;
+        /*min-width: 268.51px;*/
+    }
+
+   /*.menu-grid-cover .menu-other-options {
+        min-width: 268.51px;
+        height: 320px;
+        padding: 0 15px;
+        /*margin-left: 15px;
+    }*/
+   
+   /*.menu-other-options {
+        width: 274.37px;
+        height: 320px;
+    }*/
+
 }
